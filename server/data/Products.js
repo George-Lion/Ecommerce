@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "JTECK V",
     image: "/images/6.png",
     description:
@@ -11,7 +10,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: "2",
     name: "VR 3229-RT",
     image: "/images/5.png",
     description:
@@ -22,7 +20,6 @@ const products = [
     numReviews: 2,
   },
   {
-    _id: "3",
     name: "Sloom Motion D2 (version ST)",
     image: "/images/4.png",
     description:
@@ -33,7 +30,6 @@ const products = [
     numReviews: 3,
   },
   {
-    _id: "4",
     name: "Laptop REM C-355",
     image: "/images/3.png",
     description:
@@ -44,7 +40,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: "5",
     name: "VR 3229-RT",
     image: "/images/2.png",
     description:
@@ -55,7 +50,6 @@ const products = [
     numReviews: 2,
   },
   {
-    _id: "6",
     name: "Fujifilm",
     image: "/images/1.png",
     description:
