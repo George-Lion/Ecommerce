@@ -1,6 +1,10 @@
 import express from "express";
 import products from "./data/Products.js";
+import dotenv from "dotenv";
+import connectDatabase from "./config/MongoDb.js";
 
+dotenv.config();
+connectDatabase();
 const app = express();
 
 
@@ -20,4 +24,6 @@ app.get("/", (req, res) => {
   res.send("API is Running....")
 });
 
-app.listen(5000, console.log("server running port 5000..."));
+const PORT = process.env.PORT || 1000;
+
+app.listen(PORT, console.log(`server run in port ${PORT}`));
