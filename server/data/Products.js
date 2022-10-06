@@ -10,7 +10,7 @@ const products = [
     numReviews: 4,
   },
   {
-    name: "VR 3229-RT",
+    name: "VR 3229 RT",
     image: "/images/5.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
@@ -30,7 +30,7 @@ const products = [
     numReviews: 3,
   },
   {
-    name: "Laptop REM C-355",
+    name: "Laptop REM C355",
     image: "/images/3.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
@@ -40,7 +40,7 @@ const products = [
     numReviews: 9,
   },
   {
-    name: "VR 3229-RT",
+    name: "VR 3229 RT",
     image: "/images/2.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
