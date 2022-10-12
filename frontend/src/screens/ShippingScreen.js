@@ -18,8 +18,8 @@ const ShippingScreen = ({ history }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(saveShippingAddress({ address, city, postalCode, country }))
-    history.push("/payment")
+    dispatch(saveShippingAddress({ address, city, postalCode, country }));
+    history.push("/payment");
   };
   return (
     <>
@@ -34,24 +34,31 @@ const ShippingScreen = ({ history }) => {
             type="text"
             placeholder="Enter address"
             value={address}
+            required
             onChange={(e) => setAddress(e.target.value)}
           />
-          <input type="text" placeholder="Enter city"
+          <input
+            type="text"
+            placeholder="Enter city"
             value={city}
-            requiered
-            onChange={(e) => setCity(e.target.value)} />
-          <input type="text" placeholder="Enter postal code"
+            required
+            onChange={(e) => setCity(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Enter postal code"
             value={postalCode}
-            requiered
+            required
             onChange={(e) => setPostalCode(e.target.value)}
           />
-          <input type="text" placeholder="Enter country"
+          <input
+            type="text"
+            placeholder="Enter country"
             value={country}
-            requiered
-            onChange={(e) => setCountry(e.target.value)} />
-          <button type="submit">
-            CONTINUE
-          </button>
+            required
+            onChange={(e) => setCountry(e.target.value)}
+          />
+          <button type="submit">Continue</button>
         </form>
       </div>
     </>

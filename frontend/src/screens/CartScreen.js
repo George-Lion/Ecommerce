@@ -23,11 +23,11 @@ const CartScreen = ({ match, location, history }) => {
 
   const checkOutHandler = () => {
     history.push("/login?redirect=shipping");
-  }
+  };
 
   const removeFromCartHandler = (id) => {
     dispatch(removefromcart(id))
-  }
+  };
 
   return (
     <>

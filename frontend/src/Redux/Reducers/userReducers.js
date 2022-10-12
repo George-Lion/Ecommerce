@@ -31,7 +31,6 @@ export const userLoginReducer = (state = {}, action) => {
   }
 };
 
-
 // REGISTER
 export const userRegisterReducer = (state = {}, action) => {
   switch (action.type) {

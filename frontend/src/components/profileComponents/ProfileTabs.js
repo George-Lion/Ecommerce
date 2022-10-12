@@ -71,7 +71,7 @@ const ProfileTabs = () => {
         <div className="col-md-6">
           <div className="form">
             <label for="account-email">E-mail Address</label>
-            <input className="form-control" type="email" requiered value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input className="form-control" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
         </div>
         <div className="col-md-6">

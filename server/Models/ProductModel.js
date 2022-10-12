@@ -1,60 +1,61 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-const reviewSchema = mongoose.Schema({
-  name: { type: String, require: true },
-  rating: { type: Number, require: true },
-  comment: { type: String, require: true },
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    require: true,
-    ref: "User",
+const reviewSchema = mongoose.Schema(
+  {
+    name: { type: String, required: true },
+    rating: { type: Number, required: true },
+    comment: { type: String, required: true },
+    user: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      ref: "User",
+    },
   },
-},
   {
     timestamps: true,
   }
 );
 
-const productSchema = mongoose.Schema({
-  name: {
-    type: String,
-    require: true
+const productSchema = mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+    },
+    image: {
+      type: String,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    reviews: [reviewSchema],
+    rating: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
+    numReviews: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
+    price: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
+    countInStock: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
   },
-  image: {
-    type: String,
-  },
-  description: {
-    type: String,
-    require: true,
-  },
-  reviews: [reviewSchema],
-  rating: {
-    type: Number,
-    require: true,
-    default: 0,
-  },
-  numReviews: {
-    type: Number,
-    require: true,
-    default: 0,
-  },
-  price: {
-    type: Number,
-    require: true,
-    default: 0,
-  },
-  countInStock: {
-    type: Number,
-    require: true,
-    default: 0,
-  }
-
-},
   {
     timestamps: true,
   }
-)
+);
 
-const Product = mongoose.model("Product", productSchema)
+const Product = mongoose.model("Product", productSchema);
 
 export default Product;
