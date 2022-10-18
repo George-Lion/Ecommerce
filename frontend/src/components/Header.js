@@ -43,13 +43,7 @@ const Header = () => {
                 <i className="fab fa-instagram"></i>
               </Link>
               <Link to="">
-                <i className="fab fa-linkedin-in"></i>
-              </Link>
-              <Link to="">
                 <i className="fab fa-youtube"></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-pinterest-p"></i>
               </Link>
             </div>
           </div>
