@@ -1,21 +1,38 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
-import { productListReducer, productDetailsReducer } from "./Reducers/ProductReducers.js";
+import {
+  productCreateReviewReducer,
+  productDetailsReducer,
+  productListReducer,
+} from "./Reducers/ProductReducers";
 import { cartReducer } from "./Reducers/CartReducers";
-import { userDetailsReducer, userLoginReducer, userRegisterReducer, userUpdateProfileReducer } from "./Reducers/userReducers.js";
-import { orderCreateReducer } from "./Reducers/OrderReducers.js";
+import {
+  userDetailsReducer,
+  userLoginReducer,
+  userRegisterReducer,
+  userUpdateProfileReducer,
+} from "./Reducers/userReducers";
+import {
+  orderCreateReducer,
+  orderDetailsReducer,
+  orderListMyReducer,
+  orderPayReducer,
+} from "./Reducers/OrderReducres";
 
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
+  productReviewCreate: productCreateReviewReducer,
   cart: cartReducer,
   userLogin: userLoginReducer,
   userRegister: userRegisterReducer,
   userDetails: userDetailsReducer,
   userUpdateProfile: userUpdateProfileReducer,
   orderCreate: orderCreateReducer,
-
+  orderDetails: orderDetailsReducer,
+  orderPay: orderPayReducer,
+  orderListMy: orderListMyReducer,
 });
 
 const cartItemsFromLocalStorage = localStorage.getItem("cartItems")
@@ -23,13 +40,11 @@ const cartItemsFromLocalStorage = localStorage.getItem("cartItems")
   : [];
 
 // login
-
-const userInfoFromLocalStorange = localStorage.getItem("userInfo")
+const userInfoFromLocalStorage = localStorage.getItem("userInfo")
   ? JSON.parse(localStorage.getItem("userInfo"))
   : null;
 
-// shippingAdress
-
+// shippingAddress
 const shippingAddressFromLocalStorage = localStorage.getItem("shippingAddress")
   ? JSON.parse(localStorage.getItem("shippingAddress"))
   : {};
@@ -39,10 +54,9 @@ const initialState = {
     cartItems: cartItemsFromLocalStorage,
     shippingAddress: shippingAddressFromLocalStorage,
   },
-  userLogin: {
-    userInfo: userInfoFromLocalStorange
-  },
+  userLogin: { userInfo: userInfoFromLocalStorage },
 };
+
 const middleware = [thunk];
 
 const store = createStore(

@@ -46,7 +46,7 @@ textarea:focus {
 }
 
 .Announcement {
-  background-color: #0A074C;
+  background-color: #18094A;
   padding: 10px 0px 6px 0px;
 }
 
@@ -72,18 +72,18 @@ textarea:focus {
 }
 
 .input-group {
-  height: 50px;
+  height: 40px;
   width: 90%;
 }
 
 .search-button {
   width: 20%;
-  border-radius: 0 5px 5px 0;
-  background-color: rgb(83, 39, 66);
+  background-color: #42298D;
   color: white;
   border: 0;
   text-transform: uppercase;
   font-size: 12px;
+  border-radius: 10px;
 }
 
 .Login-Register a {
@@ -110,7 +110,7 @@ textarea:focus {
   padding: 5px 15px;
   border: 1px solid #e4e4e4;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 10px;
   margin: 0 15px;
 }
 
@@ -128,7 +128,7 @@ textarea:focus {
 }
 
 .dropdown-menu a:hover {
-  background-color: rgb(83, 39, 66) !important;
+  background-color: #E65300 !important;
   color: #ffffff !important;
 }
 
@@ -184,8 +184,10 @@ textarea:focus {
 
 .border-product {
   padding: 15px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid #D5E0FE;
+  background-color: #D5E0FE;
   border-radius: 5px;
+
 }
 
 .shopBack {
@@ -235,7 +237,7 @@ textarea:focus {
 /* NEWSLATTER */
 .subscribe-section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.226)),
-    url("https://images.pexels.com/photos/6498310/pexels-photo-6498310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat scroll center / cover;
+    url("https://images.pexels.com/photos/7864420/pexels-photo-7864420.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat scroll center / cover;
   padding: 100px 0 100px;
 }
 
@@ -272,7 +274,7 @@ textarea:focus {
 }
 
 .form-section input[type="submit"] {
-  background: rgb(83, 39, 66);
+  background: #18094A;
   border: 0 none;
   border-radius: 25px;
   color: #fff;
@@ -307,10 +309,10 @@ textarea:focus {
 .info-image {
   width: 50px;
   height: 50px;
-  border: 2px solid #0A074C;
+  border: 2px solid #E65300;
   border-radius: 100px;
   font-size: 20px;
-  color: #0A074C;
+  color: #E65300;
 }
 
 .box-info h5 {
@@ -409,7 +411,7 @@ textarea:focus {
 
 .round-black-btn:hover,
 .round-black-btn:focus {
-  background: #1cb803;
+  background: #E65300;
 }
 
 /* LOGIN */
@@ -446,7 +448,7 @@ textarea:focus {
   margin-top: 20px;
   padding: 20px 0;
   border: 0;
-  background-color: rgb(83, 39, 66);
+  background-color: #E65300;
   border-radius: 5px;
   text-transform: uppercase;
   color: white;
@@ -508,7 +510,7 @@ textarea:focus {
 }
 
 .wizard .nav .active {
-  background-color: rgb(199, 186, 194);
+  background-color: #e5fee9;
   color: black;
 }
 
@@ -537,7 +539,7 @@ textarea:focus {
 .form input {
   padding: 20px 10px;
   font-size: 17px;
-  background-color: rgb(194, 181, 189);
+  background-color: #e5fee9;
 }
 
 .form-container button {
@@ -546,7 +548,7 @@ textarea:focus {
   margin-top: 20px;
   text-transform: uppercase;
   font-size: 13px;
-  background-color: rgb(83, 39, 66);
+  background-color: #1cb803;
   color: #ffffff;
 }
 
@@ -653,7 +655,7 @@ textarea:focus {
   border: 0px;
   text-transform: uppercase;
   font-size: 13px;
-  background-color: rgb(83, 39, 66);
+  background-color: #E65300;
   color: #ffffff;
 }
 
@@ -702,7 +704,7 @@ textarea:focus {
 
 .order-detail {
   padding: 30px 0;
-  background-color: rgb(226, 219, 224);
+  background-color: #FDE9CB;
 }
 
 .order-detail h5 {
@@ -746,7 +748,7 @@ textarea:focus {
   border: 0px;
   text-transform: uppercase;
   font-size: 13px;
-  background-color: rgb(83, 39, 66);
+  background-color: #E65300;
   color: #ffffff;
 }
 

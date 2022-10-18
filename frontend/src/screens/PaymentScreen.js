@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { savePaymentMethod } from "../Redux/Actions/CartActions";
+import { savePaymentMethod } from "../Redux/Actions/cartActions";
 import Header from "./../components/Header";
 
 const PaymentScreen = ({ history }) => {
@@ -19,7 +19,7 @@ const PaymentScreen = ({ history }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(savePaymentMethod(paymentMethod))
+    dispatch(savePaymentMethod(paymentMethod));
     history.push("/placeorder");
   };
   return (
@@ -33,14 +33,17 @@ const PaymentScreen = ({ history }) => {
           <h6>SELECT PAYMENT METHOD</h6>
           <div className="payment-container">
             <div className="radio-container">
-              <input className="form-check-input" type="radio" value={paymentMethod}
-                onChange={(e) => setPaymentMethod(e.target.value)} />
+              <input
+                className="form-check-input"
+                type="radio"
+                value={paymentMethod}
+                onChange={(e) => setPaymentMethod(e.target.value)}
+              />
               <label className="form-check-label">PayPal or Credit Card</label>
             </div>
           </div>
-          <button type="submit">
-            Continue
-          </button>
+
+          <button type="submit">Continue</button>
         </form>
       </div>
     </>

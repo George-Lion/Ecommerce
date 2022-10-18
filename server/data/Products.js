@@ -1,16 +1,16 @@
 const products = [
   {
-    name: "JTECK V",
+    name: "Fuhjifilm (black)",
     image: "/images/6.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 200,
+    price: 89,
     countInStock: 3,
     rating: 4,
     numReviews: 4,
   },
   {
-    name: "VR RT",
+    name: "Velcro Sneakers For Boys & Girls (Blue)",
     image: "/images/5.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
@@ -20,17 +20,17 @@ const products = [
     numReviews: 2,
   },
   {
-    name: "Sloom Motion (version ST)",
+    name: "Season Drum V",
     image: "/images/4.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 70,
+    price: 40,
     countInStock: 0,
     rating: 3.5,
     numReviews: 3,
   },
   {
-    name: "Laptop",
+    name: "Vicius T2",
     image: "/images/3.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
@@ -40,7 +40,37 @@ const products = [
     numReviews: 9,
   },
   {
-    name: "Club",
+    name: "SUGUN Solid State Drive (Gold)",
+    image: "/images/9.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    price: 49,
+    countInStock: 7,
+    rating: 2,
+    numReviews: 2,
+  },
+  {
+    name: "Women Red Heels Sandal",
+    image: "/images/1.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    price: 29,
+    countInStock: 0,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
+    name: "Triangle Octa Laptop Gaming",
+    image: "/images/7.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    price: 199,
+    countInStock: 10,
+    rating: 5,
+    numReviews: 9,
+  },
+  {
+    name: "Reality Bin 2",
     image: "/images/2.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
@@ -50,16 +80,15 @@ const products = [
     numReviews: 2,
   },
   {
-    name: "Fujifilm",
-    image: "/images/1.png",
+    name: "Riven E7 Gaming",
+    image: "/images/8.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    price: 200,
+    price: 29,
     countInStock: 0,
     rating: 0,
     numReviews: 0,
   },
-
 ];
 
 export default products;
